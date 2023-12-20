@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
 const WatchPage = () => {
