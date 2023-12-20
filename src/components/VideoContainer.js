@@ -26,9 +26,9 @@ const VideoContainer = () => {
   return !videoData[0]?.snippet ? (
     <p>Hello honey bunny</p>
   ) : (
-    <div className="flex flex-row flex-wrap justify-around">
+<div className="flex flex-row flex-wrap gap-1 justify-around ">
       {videoData.map((item) => (
-        <Link to={"/watch?v="+ item.id} ><VideoCard info={item} key={item.id} /></Link>
+        <Link to={"/watch?v="+ item.id} key={item.id} ><VideoCard info={item} /></Link>
       ))}
     </div>
   );

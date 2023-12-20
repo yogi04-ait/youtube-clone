@@ -2,7 +2,7 @@ import VideoContainer from "./VideoContainer";
 const Maincontainer = ()=>{
     
     return(
-        <VideoContainer/> 
+        < VideoContainer/> 
     )
 }
 

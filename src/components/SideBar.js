@@ -1,7 +1,15 @@
+import {useSelector} from "react-redux";
+
+
 const SideBar = ()=>{
+
+    const isMenuOpen = useSelector(store => store.app.isMenuOpen);
+    console.log(isMenuOpen);
+    if(!isMenuOpen) return null;
+
     return(
 
-        <div className="m-2">
+        <div className="m-2 ">
 
          <ul className="flex flex-col ">
             <li className="hover:bg-gray-300 cursor-pointer rounded-lg p-2 m-1">🏠  Home</li>

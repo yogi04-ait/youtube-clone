@@ -2,6 +2,7 @@ import { useState } from "react";
 import Title from "./Title.js";
 import bell from "../assets/bell.png";
 import user from "../assets/unnamed.jpg";
+
 const Header = ()=> {
     const [searchTxt, setSearchTxt] = useState("");
     return(
