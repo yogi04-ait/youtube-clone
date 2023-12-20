@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { YOUTUBE_VIDEOS_API } from "../utils/constants";
 import VideoCard from "./VideoCard";
 import { Link } from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 const VideoContainer = () => {
   const [videoData, setVideoData] = useState([]);
@@ -24,7 +25,7 @@ const VideoContainer = () => {
   }, [getVideos]); // Include getVideos in the dependency array
 
   return !videoData[0]?.snippet ? (
-    <p>Hello honey bunny</p>
+    <Shimmer/>
   ) : (
 <div className="flex flex-row flex-wrap gap-1 justify-around ">
       {videoData.map((item) => (
